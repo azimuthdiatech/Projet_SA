@@ -1,0 +1,31 @@
+body*{
+  box-sizing: border-box;
+}
+header{
+    background-color: rgb(16, 31, 31);
+    text-align: center;
+    height: 10.5vh;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#logo{
+    float: left;
+}
+#titr{
+    align-items: center;
+    height: 10.5vh;
+    padding-top: 0.75vh;
+}
+#filtre{
+    height: 50%;
+    width: 100%;
+    background-color: teal;
+}
+#bg{
+    width: 100%;
+}
+form{
+    width: 30vh;
+    height: 27vh;
+    background-color: rgb(248, 6, 6);
+}
