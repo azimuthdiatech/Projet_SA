@@ -3,47 +3,89 @@ body{
     background-size: cover;
 }
 #container{
-    width:400px;
+    width:90vh;
     margin:0 auto;
     margin-top:10%;
-    
+    display: flex;
+    flex-direction: column;
 }
 /* Bordered form */
 form {
-    width:100%;
+    
     padding: 30px;
     border: 1px solid #f1f1f1;
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-#container h4{
-    width: 100%;
-    height: 10%;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    color: rgb(5, 4, 4);
-}
 
+/*style de la page de connexion logform*/
+#con_header_log_form{
+    background-color: rgb(6, 130, 146);
+    display: flex;
+    color: white;
+    font-size: medium;
+    padding: 3vh 3vh ;
+    justify-content: space-between;
+    
+}
 .logform{
     background-color: rgb(69, 197, 230);
 }
 /* Full-width inputs */
 input[type=text], input[type=password] {
     width: 100%;
+    height: 10vh;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 1vh;
+    background-color: rgba(248, 242, 242, 0.993);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507);
 }
-
+#con_icone{
+    max-width: 10vh;
+    max-height: 12vh;
+    margin-left: 2vh;
+}
+#con_header{
+    background-color: rgb(0, 14, 6);
+    margin: 0;
+    color: white;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#con_txt_header_prin{
+    text-align: center;
+    flex: 2;
+}
+.img_con{
+    height: 5vh;
+    width: 5vh;
+    position: absolute;
+    left: 70vh;
+    top: 4vh;
+}
+/*input de connexion*/
+.con_input{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+#sign_in{
+    text-decoration: none;
+    color: gray;
+    margin-left: 5vh;
+}
 /* Set a style for all buttons */
-input[type=submit] {
-    background-color: #76dac1;
+input[type=submit ]{
+    background-color: #319fb3;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
+    border-radius: 1vh;
     cursor: pointer;
     width: 25%;
 }
