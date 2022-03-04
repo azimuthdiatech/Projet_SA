@@ -1,0 +1,12 @@
+.list_joueur{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    grid-column-gap: 10vh;
+    grid-template-rows: 3vh;
+    padding: 5vh;
+    border-radius: 2vh;
+    border: 1px solid turquoise;
+    box-shadow: 7px 2px 7px rgb(80, 77, 77);
+    
+}

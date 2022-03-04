@@ -16,17 +16,29 @@ if ($_SERVER["REQUEST_METHOD"]=="GET"){
             exit();
         }
         if($_GET['action']=="accueil"){
-            require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueilHtml.php");
+            if(is_admin()){
+                lister_joueur();
+            }elseif(is_joueur()){
+                jeu();
+            }
         }elseif($_GET['action']=="listejoueur") {
-           
             lister_joueur();
         } //listejoueur
     }
 }
 
-function lister_joueur(){
-
-    //Appel du model
-    $data= find_users(ROLE_JOUEUR);
-    require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."listejoueur.php");
+function jeu(){
+    ob_start();
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."jeu.html.php");
+        $content_for_views=ob_get_clean();
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueilHtml.php");
     }
+
+    function lister_joueur(){
+        //Appel du model
+        ob_start();
+            $data= find_users(ROLE_JOUEUR);
+            require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."listejoueur.php");
+        $content_for_views=ob_get_clean();
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueilHtml.php");
+        }

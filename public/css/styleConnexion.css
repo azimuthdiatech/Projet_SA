@@ -1,6 +1,7 @@
 body{
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 #container{
     width:90vh;
@@ -56,6 +57,7 @@ input[type=text], input[type=password] {
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 #con_txt_header_prin{
     text-align: center;
     flex: 2;
