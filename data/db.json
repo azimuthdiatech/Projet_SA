@@ -1,12 +1,28 @@
 {
-    "users":[
+"users":[
+    {
+    "nom":"Khali",
+    "prenom":"Great",
+    "login":"joueur11@gmail.com",
+    "password":"joueur11",
+    "role":"ROLE_JOUEUR",
+    "score":140
+    },
     {
     "nom":"Cena",
     "prenom":"John",
     "login":"joueur1@gmail.com",
     "password":"joueur1",
     "role":"ROLE_JOUEUR",
-    "score":15
+    "score":1400
+    },
+    {
+    "nom":"Del Rio",
+    "prenom":"Alberto",
+    "login":"joueur10@gmail.com",
+    "password":"joueur10",
+    "role":"ROLE_JOUEUR",
+    "score":540
     },
     {
         "nom":"Orton",
@@ -14,23 +30,39 @@
         "login":"joueur2@gmail.com",
         "password":"joueur2",
         "role":"ROLE_JOUEUR",
-        "score":15
+        "score":850
         },
+        {
+            "nom":"Dani",
+            "prenom":"Steve",
+            "login":"joueur9@gmail.com",
+            "password":"joueur9",
+            "role":"ROLE_JOUEUR",
+            "score":1140
+            },
         {
             "nom":"Reigns",
             "prenom":"Roman",
             "login":"joueur3@gmail.com",
             "password":"joueur3",
             "role":"ROLE_JOUEUR",
-            "score":15
+            "score":1200
             },
+            {
+                "nom":"Rollins",
+                "prenom":"Seth",
+                "login":"joueur12@gmail.com",
+                "password":"joueur12",
+                "role":"ROLE_JOUEUR",
+                "score":90
+                },
             {
                 "nom":"Johnson",
                 "prenom":"Dwayne",
                 "login":"joueur4@gmail.com",
                 "password":"joueur4",
                 "role":"ROLE_JOUEUR",
-                "score":15
+                "score":520
                 },
                 {
                     "nom":"Bank",
@@ -38,8 +70,16 @@
                     "login":"joueur5@gmail.com",
                     "password":"joueur5",
                     "role":"ROLE_JOUEUR",
-                    "score":15
+                    "score":856
                     },
+                    {
+                        "nom":"Lundgreen",
+                        "prenom":"Dolf",
+                        "login":"joueur13@gmail.com",
+                        "password":"joueur13",
+                        "role":"ROLE_JOUEUR",
+                        "score":630
+                        },
     {
     "nom":"Momoa",
     "prenom":"Jason",
@@ -49,6 +89,14 @@
     "score":15
     },
     {
+        "nom":"Cube",
+        "prenom":"Ice",
+        "login":"joueur15@gmail.com",
+        "password":"joueur15",
+        "role":"ROLE_JOUEUR",
+        "score":50
+        },
+    {
         "nom":"Bauer",
         "prenom":"Jack",
         "login":"admin2@gmail.com",
@@ -57,12 +105,20 @@
         "score":15
         },
         {
+            "nom":"White",
+            "prenom":"Jai",
+            "login":"joueur14@gmail.com",
+            "password":"joueur14",
+            "role":"ROLE_JOUEUR",
+            "score":120
+            },
+        {
             "nom":"Statham",
             "prenom":"Jason",
             "login":"joueur6@gmail.com",
             "password":"joueur6",
             "role":"ROLE_JOUEUR",
-            "score":15
+            "score":100
             },
             {
                 "nom":"Seagal",
@@ -70,15 +126,23 @@
                 "login":"joueur7@gmail.com",
                 "password":"joueur7",
                 "role":"ROLE_JOUEUR",
-                "score":15
+                "score":60
                 },
                 {
                     "nom":"Rambo",
                     "prenom":"John",
-                    "login":"joueur8@gmail.com",
-                    "password":"joueur8",
+                    "login":"admin3@gmail.com",
+                    "password":"admin3",
                     "role":"ROLE_JOUEUR",
-                    "score":15
-                    }
+                    "score":1500
+                    },
+                    {
+                        "nom":"Rambo",
+                        "prenom":"John",
+                        "login":"admin33@gmail.com",
+                        "password":"admin",
+                        "role":"ROLE_JOUEUR",
+                        "score":1500
+                        }
     ]
 }

@@ -11,10 +11,10 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
 
 if ($_SERVER["REQUEST_METHOD"]=="GET"){
     if(isset($_GET['action'])){
-        if(!is_connect()) {
-            header("location:".WEB_PUBLIC);
-            exit();
-        }
+        // if(!is_connect()) {
+        //     header("location:".WEB_PUBLIC);
+        //     exit();
+        // }
         if($_GET['action']=="accueil"){
             if(is_admin()){
                 lister_joueur();
@@ -23,7 +23,14 @@ if ($_SERVER["REQUEST_METHOD"]=="GET"){
             }
         }elseif($_GET['action']=="listejoueur") {
             lister_joueur();
-        } //listejoueur
+        }elseif($_GET['action']=="creerAdmin") {
+            creer_admin();
+        }elseif($_GET['action']=="inscription") {
+            inscription_j();
+        }
+        elseif($_GET['action']=="creerquestion") {
+            creer_question();
+        }
     }
 }
 
@@ -42,3 +49,16 @@ function jeu(){
         $content_for_views=ob_get_clean();
         require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueilHtml.php");
         }
+    function creer_admin(){
+        ob_start();
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."creerAdmin.Html.php");
+        $content_for_views=ob_get_clean();
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueilHtml.php");
+    }
+    function inscription_j(){
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."inscription.html.php");
+        require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."headerHtml.php");
+    }
+    function creer_question(){
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."creerquestion.html.php");
+    }

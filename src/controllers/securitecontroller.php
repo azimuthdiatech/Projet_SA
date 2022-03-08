@@ -25,11 +25,11 @@ if ($_SERVER["REQUEST_METHOD"]=="GET"){
 
 function connexion(string $login,string $password){
     $errors=[];
-    champ_obligatoire('login', $login, $errors, "login invalid");
+    champ_obligatoire('login', $login, $errors);
     if(count($errors) ==0){
         valid_email('login', $login, $errors);
     }
-    champ_obligatoire('password', $password, $errors, "password invalid");
+    valid_password('password', $password, $errors,"password invalid");
     
     if(count($errors) ==0){
         //appel d'une fonction du models
@@ -46,13 +46,15 @@ function connexion(string $login,string $password){
             //utilisateur n'existe pas
             $errors["connexion"]="Login ou mot de passe incorrecte";
             $_SESSION[KEY_ERRORS]=$errors;
+            
             header("location:".WEB_ROOT);
             exit();
         }
     }else{
         //erreur de validation
-        echo"test";
+       
         $_SESSION[KEY_ERRORS]=$errors;
+       
         header("location:".WEB_ROOT);
         exit();
     }

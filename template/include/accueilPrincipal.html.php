@@ -2,6 +2,7 @@
 //Layout ou page de présentation
 require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."headerHtml.php");
 require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."headerPrincipal.html.php");
+
 ?>
 
 <div id="menu_accueil">
@@ -32,21 +33,14 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."headerPrincipal.html.php"
                         <?php if(is_admin()):?>
                         <li><a class="active" href="<?=WEB_PUBLIC."?controllers=user&action=listejoueur"?>">Liste des joueurs</a><div id="acc_icone"><img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-liste-active.png" ?>" class="img_acc" alt=""></div></li>
                         <?php endif?>
-                        <li><a class="active" href="<?=WEB_PUBLIC."?controllers=user&action=#"?>">Créer Questions</a><div id="acc_icone"><img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-ajout.png" ?>" class="img_acc" alt=""></div></li>
+                        <li><a class="active" href="<?=WEB_PUBLIC."?controllers=user&action=creerquestion"?>">Créer Questions</a><div id="acc_icone"><img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-ajout.png" ?>" class="img_acc" alt=""></div></li>
                     </ul>
                 </div>
 
         </div>
-
-        <div id="acc_parti_dynamique">
-            <?php
-            //Contenue des vues
-            echo $content_for_views;
-            ?>  
-            
+        <div id="ad_parti_dynamique">
         </div>
     </div>
-
 </div>
 
 <?php

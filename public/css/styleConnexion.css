@@ -4,19 +4,18 @@ body{
     
 }
 #container{
-    width:90vh;
+    width:75vh;
     margin:0 auto;
     margin-top:10%;
     display: flex;
     flex-direction: column;
 }
 /* Bordered form */
-form {
-    
+.con_form{
     padding: 30px;
     border: 1px solid #f1f1f1;
-    background: #fff;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    background: rgb(243, 235, 235);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*style de la page de connexion logform*/
@@ -27,13 +26,13 @@ form {
     font-size: medium;
     padding: 3vh 3vh ;
     justify-content: space-between;
-    
+    font-weight: bold;
 }
 .logform{
     background-color: rgb(69, 197, 230);
 }
 /* Full-width inputs */
-input[type=text], input[type=password] {
+#con_log {
     width: 100%;
     height: 10vh;
     padding: 12px 20px;
@@ -42,8 +41,20 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 1vh;
-    background-color: rgba(248, 242, 242, 0.993);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507);
+    background-color: rgba(238, 235, 235, 0.993);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+#con_pwd {
+    width: 100%;
+    height: 10vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 1vh;
+    background-color: rgba(238, 235, 235, 0.993);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 #con_icone{
     max-width: 10vh;
@@ -57,16 +68,19 @@ input[type=text], input[type=password] {
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+p{
+    font-size: 2vh;
+    font-style: italic;
+}
 #con_txt_header_prin{
     text-align: center;
     flex: 2;
 }
 .img_con{
-    height: 5vh;
-    width: 5vh;
+    height: 4vh;
+    width: 4vh;
     position: absolute;
-    left: 70vh;
+    left: 58vh;
     top: 4vh;
 }
 /*input de connexion*/
@@ -78,21 +92,37 @@ input[type=text], input[type=password] {
 #sign_in{
     text-decoration: none;
     color: gray;
-    margin-left: 5vh;
+    margin-left: 3vh;
+    font-size: 2vh;
+    font-weight: bold;
+    width: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* Set a style for all buttons */
-input[type=submit ]{
+#sub_sign{
+    display: flex;
+}
+#con_submit{
     background-color: #319fb3;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    border-radius: 1vh;
+    border-radius: 0.5vh;
     cursor: pointer;
     width: 25%;
 }
-input[type=submit]:hover {
+#con_submit:hover {
     background-color: white;
     color: #53af57;
     border: 1px solid #53af57;
+}
+form-control_error{
+    color: red;
+    font-style: italic;
+}
+form-control_success{
+    color: red;
+    font-style: italic;
 }

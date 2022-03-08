@@ -8,7 +8,6 @@ body{
   flex-direction: column;
   font-size:1em;
   font-family: Arial,sans-serif;
-  border: 2px solid green;
 }
 #acc_menu{
   flex: 1;
@@ -16,28 +15,31 @@ body{
   border-radius: 5vh;
   margin-right: 5vh;
   box-shadow: 7px 2px 7px rgba(49, 49, 49, 0.5);
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 #acc_avatar{
   display: flex;
-  background:linear-gradient(white,rgb(42, 201, 230)) ;
-  border-radius: 2vh;
+  background:linear-gradient(white,rgb(43, 171, 221)) ;
+  border-radius: 1vh;
 }
 h3{
   color: white;
 }
+.h2list{
+  font-style: italic;
+  color: rgb(175, 168, 168);
+}
 #acc_body{
   display: flex;
-  height: 70vh;
+  height: 68vh;
   padding: 5vh;
-}
-#acc_menu{
-  display: flex;
-  flex-direction: column;
-  
+  background-color: rgb(240, 233, 233);
 }
 .img_acc_avatar{
-  width: 20vh;
-  height: 20vh;
+  width: 15vh;
+  height: 15vh;
   border-radius: 25vh;
   margin-right: 1vh;
   
@@ -52,7 +54,7 @@ h3{
 #menu{
   background-color: #fff;
   flex: 2;
-  height: 10vh;
+  height: 8vh;
   border-radius: 2vh;
 }
 a{
@@ -74,7 +76,7 @@ li{
   justify-content: flex-start;
   align-items: center;
   padding-left: 5vh;
-  height: 10vh;
+  height: 9vh;
   border-top:1px solid #fff;
 }
 li:hover{
@@ -91,7 +93,8 @@ li:hover{
   width: 50%;
   padding-left: 5.5vh;
   border-radius: 1vh;
-  padding-top: 7px;
+  padding-top: 1.6vh;
+  font-weight: bold;
 }
 ul {
   padding: 0;
@@ -104,20 +107,16 @@ ul {
   margin-top: 1vh;
   justify-content: flex-end;
   align-items: center;
- 
   background-color: rgb(42, 201, 230);
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-
 #acc_text{
   text-align: center;
   flex: 8;
 }
 .avatar{
-
-  margin: 5vh;
+  margin: 4.5vh;
 }
 .avatar_text{
 
@@ -129,6 +128,7 @@ ul {
   flex: 2;
   display: flex;
   justify-content: center;
+  font-size: 2.5vh;
 }
 #acc_btn{
   font-size: 2.25vh;
@@ -143,5 +143,22 @@ ul {
   justify-content: center;
   align-items: center;
   flex: 2;
-  
+  width: 40%;
+}
+
+#div_btn_suiv{
+  width: 60vh;
+  height: 6vh;
+  flex: 4;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2vh;
+}
+#btn_suivant{
+  color: white;
+  background-color: turquoise;
+  width: 20%;
+  border: 0;
+  font-size: 2.5vh;
+  border-radius: 1vh;
 }
