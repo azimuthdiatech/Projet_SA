@@ -6,6 +6,7 @@ $data=json_decode($dataJson,true);
 return $data[$key];
 }
 //Enregistrement et Mis a jour des donnees du fichier
-function array_to_json(string $key,array $data):array{
-return [];
+function array_to_json():array{
+$data = json_decode(file_get_contents(PATH_DB),true);
+return $data ;
 }

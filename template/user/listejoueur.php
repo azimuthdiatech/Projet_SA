@@ -1,9 +1,11 @@
-<div>
-    <h2 class="h2list">LISTE DES JOUEURS</h2>
+
+
+<div id="listjoueur">
+    <h4 class="h2list">LISTE DES JOUEURS</h4>
     <div class="list_joueur">
-        <div>Nom</div>
-        <div>Prénom</div>
-        <div>Score</div>
+        <div >Nom</div>
+        <div >Prénom</div>
+        <div >Score</div>
         <?php foreach ($data as $value) :?>
             <div><?=$value['nom']?></div>
             <div><?=$value['prenom']?></div>

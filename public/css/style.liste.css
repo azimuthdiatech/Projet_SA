@@ -1,11 +1,40 @@
 .list_joueur{
     display: grid;
+    height: 50vh;
     grid-template-columns: repeat(3, 1fr);
     background-color: white;
-    grid-column-gap: 10vh;
+    grid-column-gap: 8vh;
     grid-template-rows: 3vh;
-    padding: 5vh;
+    padding: 2.5vh;
     border-radius: 2vh;
     border: 1px solid turquoise;
     box-shadow: 7px 2px 7px rgb(80, 77, 77);
+    font-size: small;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+
+.h2list{
+    color: rgb(102, 101, 101);
+    font-weight: bold;
+    font-style: italic;
+}
+#listjoueur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2px;
+    width: 80vh;
+    height: 65vh;
+    box-shadow: 7px 2px 7px 7px rgb(80, 77, 77);
+}
+.containeur_qu{
+    background-color: rgb(190, 32, 32);
+    box-shadow: 7px 2px 7px 7px rgb(80, 77, 77);
+    width: 40%;
+    height: 40vh;
+}
+.titre{
+    color: red;
 }

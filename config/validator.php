@@ -26,3 +26,9 @@ function valid_password(string $key,$password, array &$errors,string $message="M
     }
  }
 }
+function matcPassword($password1,$password2,array &$errors,$message="les mots de passe ne match pas"):void{
+    if(strcmp($password1,$password2)==0){
+        $errors['password']=$message;
+    }
+}
+////////////////////////////////////////////////////////////////////////////

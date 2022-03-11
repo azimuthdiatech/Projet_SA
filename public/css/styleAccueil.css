@@ -1,5 +1,6 @@
 body{
     background-image: url(/projet_Quizz/public/img/background.png);
+    margin: 0;
 }
 
 #menu_accueil{
@@ -26,10 +27,6 @@ body{
 }
 h3{
   color: white;
-}
-.h2list{
-  font-style: italic;
-  color: rgb(175, 168, 168);
 }
 #acc_body{
   display: flex;
@@ -102,6 +99,14 @@ ul {
   list-style: none;
   max-width:500px;
   }
+  a:active {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    max-width:500px;
+    background-color: rgb(92, 89, 89);
+    color: white;
+    }
 #acc_header{
   display: flex;
   margin-top: 1vh;
@@ -125,17 +130,20 @@ ul {
 }
 #acc_btn_decon{
   height: 6vh;
-  flex: 2;
+  flex: 2.5;
   display: flex;
   justify-content: center;
   font-size: 2.5vh;
+  
 }
 #acc_btn{
   font-size: 2.25vh;
-  width: 20vh;
-  background-color: turquoise;
+  width: 15vh;
+  background-color: rgb(64, 224, 208);
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 2vh;
+  
 }
 
 #acc_parti_dynamique{
@@ -144,11 +152,13 @@ ul {
   align-items: center;
   flex: 2;
   width: 40%;
+  height: 100%;
+  box-shadow: 7px 2px 7px 7px rgb(80, 77, 77, 0.3);
 }
 
 #div_btn_suiv{
   width: 60vh;
-  height: 6vh;
+  height: 5.5vh;
   flex: 4;
   display: flex;
   justify-content: flex-end;
@@ -160,5 +170,5 @@ ul {
   width: 20%;
   border: 0;
   font-size: 2.5vh;
-  border-radius: 1vh;
+  border-radius: 0.5vh;
 }

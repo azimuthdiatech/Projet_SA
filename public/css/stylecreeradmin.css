@@ -1,6 +1,4 @@
-body{
-    overflow: hidden;
-}
+
 #ad_parti_dynamique{
     display: flex;
     justify-content: center;
@@ -10,6 +8,8 @@ body{
     height: auto;
     background-color: rgb(255, 255, 255);
     border-radius: 1vh;
+    border: 2px solid red;
+    box-shadow: 7px 2px 7px rgb(80, 77, 77, 0.3);
   }
   #ins_parti_dynamique{
     display: flex;
@@ -21,6 +21,8 @@ body{
     background-color: rgb(255, 255, 255);
     border-radius: 1vh;
     margin-left: 40vh;
+    border: 2px solid red;
+    box-shadow: 7px 2px 7px rgb(80, 77, 77, 0.3);
   }
   #creer_compt{
       display: flex;
@@ -69,13 +71,25 @@ body{
       height: 10.5vh;
       padding-left: 5vh;
       padding-top: 1vh;
-      font-size: 4.5vh;
       font-family: sans-serif;
   }
+  .head_text_ad{
+    height: 8vh;
+    padding-left: 5vh;
+    padding-top: 1vh;
+    font-size: 3vh;
+    margin-bottom: 2vh;
+    font-family: sans-serif;
+    
+}
   .text_inscrire{
       color: rgb(83, 82, 82);
       font-weight: bold;
   }
+  .text_inscrire_ad{
+    color: rgb(83, 82, 82);
+    font-weight: bold;
+}
   .file_avatar{
       margin-top: 2vh;
       margin-left: 5vh;
@@ -105,7 +119,7 @@ body{
     font-size: 2vh;
   }
   .file_avat{
-      display: none;
+      visibility: hidden;
   }      
   
   .form_div_file{
@@ -114,7 +128,6 @@ body{
   }
   .hr_head_ins{
     width: 65vh;
-    margin-top: 2.5vh;
     margin-right: 7vh;
     
   }

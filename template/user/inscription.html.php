@@ -1,3 +1,9 @@
+
+<?php
+//Layout ou page de présentation
+require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."headerHtml.php");
+?>
+
 <div id="con_header">
     <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."icone.png" ?>" id="con_icone" alt="">  
     <div id="con_txt_header_prin"><h2>Le plaisir de jouer</h2></div> 
@@ -6,7 +12,9 @@
 
     <div id="ins_parti_dynamique">
         <div class="containeur">
-            <form method='POST' action="" class="formul">
+            <form method='POST' action="<?=WEB_ROOT?>" class="formul" id="form_ins" enctype="multipart/form-data">
+            <input type="hidden" name="controllers" value="user">
+            <input type="hidden" name="action" value="creer_joueur">
                 <div class="head_text_ins">
                     <div class="text_inscrire">
                         S'INSCRIRE
@@ -31,28 +39,31 @@
                 </div>
                 <div class="formdiv">   
                     <label for="password" class="label_ins">Password</label><br>
-                    <input type="text" id="password_ins_ad" class="con_ins_j" name="password">
+                    <input type="password" id="password_ins_ad" class="con_ins_j" name="password">
                     <small>Erreur</small>
                 </div> 
                 <div class="formdiv">
                     <label for="password2" class="label_ins">Confirm password</label><br>
-                    <input type="text" id="password2_ins_ad" class="con_ins_j" name="password2">
+                    <input type="password" id="password2_ins_ad" class="con_ins_j" name="password2">
                     <small>Erreur</small> 
                 </div>
                 <div class="form_div_file">
                     <label for="fichier" class="label_ins">Avatar</label>
-                    <input type="file" name="file_ava" class="file_avat" id="file_ins">
-                    <label for="file_ins" class="file_avatar">Choisir un fichier</label>
+                    <input type="file" name="file" class="file_avat" id="file_ins">
+                    <i id="nom_img"></i>
                 </div>
                 <div id="creer_compt">
-                    <input type="submit" id='submit_ins' value='Créer compte' > 
+                    <input type="submit" id="submit_ins" value='Créer compte' > 
                 </div>
             </form> 
             <div class="avatar_ins">
-                <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."avatar.png" ?>" class="img_ins_avatar" alt="">
+            <label for="file_ins" class="file_avatar">
+            <img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."avatar.png" ?>" class="img_ins_avatar" id="img_ins_avatar">
+            </label>
                 <div class="text_avatar_ins">
                     Avatar du joueur
                 </div> 
             </div>      
         </div>
     </div>
+    <script src="<?=WEB_PUBLIC."js".DIRECTORY_SEPARATOR."scriptjoueur.js" ?>"></script>
