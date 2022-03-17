@@ -29,7 +29,7 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."headerPrincipal.html.php"
                     <i style="color:red" id="error_log"><?=$errors["login"]?></i>
                     <?php endif?>
                <div class="con_input">
-               <input type="password" placeholder="Password" id="con_pwd" name="password" ><img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-password.jpeg" ?>" class="img_con" alt="">
+               <input type="password" placeholder="Password" id="con_pwd" name="password" ><span id="affichpwd">Afficher</span><span id="maskpwd">Masquer</span><img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-password.jpeg" ?>" class="img_con" alt="">
                </div>
                     <?php if(isset($errors["password"])):?>
                     <i style="color:red" id="error_pwd"><?=$errors["password"]?></i>

@@ -27,7 +27,7 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."headerPrincipal.html.php"
             
                 <div id="menu">
                     <ul>
-                        <li><a class="active" href="<?=WEB_PUBLIC."?controllers=user&action=#"?>">Liste Questions</a><div id="acc_icone"><img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-liste.png" ?>" class="img_acc" alt=""></div></li>
+                        <li><a class="active" href="<?=WEB_PUBLIC."?controllers=user&action=listerquestion"?>">Liste Questions</a><div id="acc_icone"><img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-liste.png" ?>" class="img_acc" alt=""></div></li>
                         <li><a class="active" href="<?=WEB_PUBLIC."?controllers=user&action=creerAdmin"?>">Créer Admin</a><div id="acc_icone"><img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-ajout.png" ?>" class="img_acc" alt=""></div></li>
                        
                         <li><a class="active" href="<?=WEB_PUBLIC."?controllers=user&action=listejoueur"?>">Liste des joueurs</a><div id="acc_icone"><img src="<?=WEB_PUBLIC."img".DIRECTORY_SEPARATOR."ic-liste-active.png" ?>" class="img_acc" alt=""></div></li>

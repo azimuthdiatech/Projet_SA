@@ -22,3 +22,4 @@ if (window.FileList && window.File && window.FileReader) {
         reader.readAsDataURL(file);
     });
 }
+

@@ -6,7 +6,7 @@ const er=document.getElementById("error");
 const error_pwd=document.getElementById("error_pwd");
 var error1=true;
 var error2=true;
-pass=formpwd.value;
+
 function isValidEmail(formlog) {
     //Tester si l'email est valide
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -49,4 +49,19 @@ form.addEventListener('submit',function(e){
           }
  });
 
+ const formpass=document.getElementById("con_pwd");
+ const affichpwd=document.getElementById("affichpwd");
+ const maskpwd=document.getElementById("maskpwd");
+ 
+ affichpwd.addEventListener("click", function(){
+    affichpwd.style.display ="none";
+    maskpwd.style.display ="block";
+    formpass.type = "text";
+ });
+
+ maskpwd.addEventListener("click", function(){
+    maskpwd.style.display ="none";
+    affichpwd.style.display ="block";
+    formpass.type = "password";
+ });
  

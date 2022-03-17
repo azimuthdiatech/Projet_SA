@@ -24,28 +24,28 @@ require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."headerHtml.php");
                 </div>
                 <div class="formdiv">
                     <label for="prenom" class="label_ins">Prénom </label> <br>
-                    <input type="text" id="prenom_ins_ad" class="con_ins_j" name="prenom">
-                    <small>Erreur</small>
+                    <input type="text" id="prenom_ins_ad" class="con_ins_j" error="error_1" name="prenom">
+                    <small id="error"></small>
                 </div> 
                 <div class="formdiv">
                     <label for="nom" class="label_ins">Nom</label><br>
-                    <input type="text" id="nom_ins_ad" class="con_ins_j" name="nom">
-                    <small>Erreur</small> 
+                    <input type="text" id="nom_ins_ad" class="con_ins_j" error="error_2" name="nom">
+                    <small id="error"></small> 
                 </div>
                 <div class="formdiv"> 
                     <label for="login" class="label_ins">Login</label><br>
-                    <input type="text" id="login_ins_ad" class="con_ins_j" name="login">
-                    <small>Erreur</small> 
+                    <input type="text" id="login_ins_ad" class="con_ins_j" error="error_3" name="login">
+                    <small id="error_log"></small> 
                 </div>
                 <div class="formdiv">   
                     <label for="password" class="label_ins">Password</label><br>
-                    <input type="password" id="password_ins_ad" class="con_ins_j" name="password">
-                    <small>Erreur</small>
+                    <input type="password" id="password_ins_ad" class="con_ins_j" error="error_4" name="password">
+                    <small id="error_pwd"></small>
                 </div> 
                 <div class="formdiv">
                     <label for="password2" class="label_ins">Confirm password</label><br>
-                    <input type="password" id="password2_ins_ad" class="con_ins_j" name="password2">
-                    <small>Erreur</small> 
+                    <input type="password" id="password2_ins_ad" class="con_ins_j" error="error_5" name="password2">
+                    <small id="error_pwd2"></small> 
                 </div>
                 <div class="form_div_file">
                     <label for="fichier" class="label_ins">Avatar</label>

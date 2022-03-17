@@ -53,6 +53,9 @@ if ($_SERVER["REQUEST_METHOD"]=="GET"){
             case 'creerquestion':{
                 creer_question();
             }break;
+            case 'listerquestion':{
+                lister_question();
+            }break;
              
 
         }
@@ -117,7 +120,33 @@ function jeu(){
     function lister_joueur(){
         //Appel du model
         ob_start();
-            $data= find_users(ROLE_JOUEUR);
+            $data = find_users(ROLE_JOUEUR);
+            $users = count($data);
+            $users_par_page = 5;
+            $nbre_de_page = ceil($users / $users_par_page);
+                if(isset($_GET["page"])){
+                        $currentsPage = (int)$_GET["page"];
+                    if($currentsPage > $nbre_de_page ){
+                        $currentsPage = $nbre_de_page;
+                }if($currentsPage < 1){
+                    $currentsPage = 1;
+                }
+                
+            }else{
+                $currentsPage = 1;
+            }
+                
+            $indiceDepart =($currentsPage - 1) * $users_par_page;
+            $indiceFin = $indiceDepart + $users_par_page -1;
+
+            for($i = $indiceDepart; $i <= $indiceFin; $i++){
+                if(isset($data[$i])){
+                    $element[] = $data[$i];
+                }
+            }
+            $data = $element;
+            
+
             require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."listejoueur.php");
         $content_for_views=ob_get_clean();
         require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueilHtml.php");
@@ -139,9 +168,9 @@ function jeu(){
         $content_for_views=ob_get_clean();
         require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueilHtml.php");
     }
-    function liste_question(){
+    function lister_question(){
         ob_start();
-        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."creerquestion.html.php");
+        require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."listequestion.html.php");
         $content_for_views=ob_get_clean();
         require_once(PATH_VIEWS."user".DIRECTORY_SEPARATOR."accueilHtml.php");
     }
@@ -160,7 +189,6 @@ function upload_file(array &$errors,$image){
         }else{
             $errors["file"]="Veuillez choisir une extension correcte";
         }
-
     }else{
         $errors["file"]="choississez un fichier";
     }
